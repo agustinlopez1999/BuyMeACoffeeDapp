@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      Connected account: {account}
+      <b>Connected account:</b> {account}
       <Buy state={state}></Buy>
       <Memos state={state}></Memos>
     </div>
