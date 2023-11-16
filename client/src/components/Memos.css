@@ -1,0 +1,13 @@
+table {
+    background-color: #363434; /* Change this color to your desired background color */
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
