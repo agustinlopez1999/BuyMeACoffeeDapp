@@ -3,7 +3,7 @@ import abi from "./contractJson/BuyMeACoffee.json";
 import { ethers } from "ethers";
 import Memos from './components/Memos';
 import Buy from './components/Buy';
-import './App.css';
+//import './App.css';
 
 function App() {
   const [state, setState] = useState({
@@ -52,7 +52,9 @@ function App() {
 
   return (
     <div className="App">
-      <b>Connected account:</b> {account}
+      <h1>BUY ME A COFFEE</h1>
+      <h2>Connected account: {account}</h2> 
+      <h2><a target="_blank" href="https://sepolia.etherscan.io/address/0xF3F4B1Bc2466707b7C1290fB9f073369D6DE5d8B">Contract Address</a></h2>
       <Buy state={state}></Buy>
       <Memos state={state}></Memos>
     </div>
