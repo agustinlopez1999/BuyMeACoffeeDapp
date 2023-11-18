@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import './Buy.css'; 
+//import './Buy.css'; 
 
 const Buy = ({ state }) => {
   const buyCoffee = async (event) => {
@@ -17,16 +17,20 @@ const Buy = ({ state }) => {
   return (
     <>
       <form onSubmit={buyCoffee}>
-        <label htmlFor="name">Name:</label>
-        <input id="name" type="text" required />
-        
-        <label htmlFor="message">Message:</label>
-        <input id="message" type="text" required />
+        <fieldset>
+          <legend>User Data</legend>
+            <label htmlFor="name">Name:</label><br />
+            <input id="name" type="text" placeholder="Enter your name" required /><br />
+            
+            <label htmlFor="message">Message:</label><br />
+            <input id="message" type="text" placeholder="Leave me a Message" required /><br />
 
-        <label htmlFor="amount">Amount (ETH):</label>
-        <input id="amount" type="number" step="0.0000001" required />
+            <label htmlFor="amount">Amount:</label><br />
+            <input id="amount" type="number" placeholder="Enter ETH Amount" step="0.0000001" required /><br />
 
-        <button type="submit">Pay</button>
+            <button type="submit">Pay</button>
+            <button type="reset">Reset</button>
+        </fieldset>
       </form>
     </>
   );

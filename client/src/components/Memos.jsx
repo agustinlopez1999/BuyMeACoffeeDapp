@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import './Memos.css'; 
+//import './Memos.css'; 
 
 const Memos = ({ state }) => {
   const [memos, setMemos] = useState([]);
@@ -16,7 +16,7 @@ const Memos = ({ state }) => {
   }, [contract]);
 
   return (
-    <table>
+    <table border="2">
       <thead>
         <tr>
           <th>Name</th>
