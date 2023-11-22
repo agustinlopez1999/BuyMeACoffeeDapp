@@ -18,7 +18,7 @@ nav{
 nav ul{
   list-style:none;
   overflow:hidden;
-  background-color: grey;
+  background-color: lightskyblue;
 }
 
 nav ul li{
@@ -28,31 +28,14 @@ nav ul li{
 }
 
 nav ul li:hover {
-  text-decoration:none;
-  color:white;
-  background: lightskyblue;
+  background-color: transparent;
 }
 
 nav ul li a{
   display: block;
   padding: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.link a{
-  text-decoration: none;
   color: #15191B;
-  padding-left: 1%;
-  padding-right: 1%;
-  font-family:'Courier New', Courier, monospace;
-  background-color: lightskyblue;
-  border: 2px solid black;
-}
-
-.link a:hover{
   text-decoration: none;
-  color: #15191B;
 }
 
 .App {
