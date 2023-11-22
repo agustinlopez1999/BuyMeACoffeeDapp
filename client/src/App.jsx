@@ -3,7 +3,7 @@ import abi from "./contractJson/BuyMeACoffee.json";
 import { ethers } from "ethers";
 import Memos from './components/Memos';
 import Buy from './components/Buy';
-//import './App.css';
+import './App.css';
 
 function App() {
   const [state, setState] = useState({
@@ -46,19 +46,19 @@ function App() {
         console.log(error);
       }
     };
-
     template();
   }, []);
 
   return (
     <div className="App">
-      <h1 id="title">BUY ME A COFFEE</h1>
-      <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*CEZSIxeYr6PCxsN6Gr38MQ.png" alt="Buy Me a Coffee" width="435" title="Logo"/>
-      <h2 id="account"> Connected account: {account}</h2> 
-      <h2 id="contractLink"><a target="_blank" href="https://sepolia.etherscan.io/address/0xF3F4B1Bc2466707b7C1290fB9f073369D6DE5d8B">Contract Address</a></h2>
-      <a target="_blank" href="https://sepolia.etherscan.io/address/0xF3F4B1Bc2466707b7C1290fB9f073369D6DE5d8B">
-        <img src="https://media.tenor.com/Q5e7EFiLLVMAAAAC/ethereum.gif" alt="Ethereum gif" width="200"/>
-      </a>
+      <nav>
+        <ul>
+		      <li><a target="_blank" href="https://sepolia.etherscan.io/address/0xF3F4B1Bc2466707b7C1290fB9f073369D6DE5d8B">Contract</a></li>
+		      <li><a target="_blank" href="https://www.youtube.com/channel/UCt4h1HNd8uw_dt9uY8lWdcA">Youtube</a></li>
+	      </ul>
+      </nav>
+      <h4 id="account"> Connected account: {account}</h4> 
+      <img id="logo" src="https://drive.google.com/uc?export=view&id=1lHmV--JOka5Wv3q6I7ljIQWpU10_VXHW"alt="Buy Me a Coffee" width="435" title="Logo"/>
       <Buy state={state}></Buy>
       <Memos state={state}></Memos>
     </div>

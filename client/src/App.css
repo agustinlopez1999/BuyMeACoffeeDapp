@@ -1,8 +1,58 @@
 body {
-  background-color: #4a4949; /* Change this color to your desired background color */
+  background-color: lightblue; /* Change this color to your desired background color */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#account{
+  color: #15191B;
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+nav{
+  float: left;
+}
+
+nav ul{
+  list-style:none;
+  overflow:hidden;
+  background-color: grey;
+}
+
+nav ul li{
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 20px;
+}
+
+nav ul li:hover {
+  text-decoration:none;
+  color:white;
+  background: lightskyblue;
+}
+
+nav ul li a{
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link a{
+  text-decoration: none;
+  color: #15191B;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family:'Courier New', Courier, monospace;
+  background-color: lightskyblue;
+  border: 2px solid black;
+}
+
+.link a:hover{
+  text-decoration: none;
+  color: #15191B;
 }
 
 .App {
